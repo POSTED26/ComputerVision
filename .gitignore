@@ -1,2 +1,74 @@
-x64/
 .DS_store
+# Ignore build artifacts
+/build/
+/bin/
+/obj/
+/out/
+/x64/
+/Debug/
+/Release/
+/CMakeFiles/
+/CMakeCache.txt
+
+# Ignore Visual Studio files
+*.VC.db
+*.VC.opendb
+*.sln
+*.vcxproj
+*.vcxproj.*
+*.ncb
+*.suo
+*.user
+*.sdf
+*.opensdf
+
+# Ignore CMake-generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Ignore compiled object files
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.a
+*.lib
+*.lo
+*.lai
+*.la
+*.pyc
+*.pyo
+*.pdb
+*.ilk
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Ignore dependency management files
+/deps/
+/third_party/
+
+# Ignore CLion and JetBrains IDE files
+.idea/
+*.iml
+cmake-build-debug/
+cmake-build-release/
+
+# Ignore vcpkg files
+/vcpkg_installed/
+.vscode/
+.vscode/
+
+# Ignore other common editor files
+*.code-workspace
+*.bak
+*.orig
