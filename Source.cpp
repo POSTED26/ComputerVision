@@ -2,12 +2,13 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/dnn.hpp>
 
+static std::string MODEL_DIR = "../models/";
 
 
 int main() {
 	// Load the Caffe model
-    std::string modelPath = "/Users/nobetw-m4/opencv_models/res10_300x300_ssd_iter_140000.caffemodel";
-    std::string configPath = "/Users/nobetw-m4/opencv_models/deploy.prototxt";
+    std::string modelPath = MODEL_DIR + "res10_300x300_ssd_iter_140000.caffemodel";
+    std::string configPath = MODEL_DIR + "deploy.prototxt";
 
 	cv::dnn::Net net = cv::dnn::readNetFromCaffe(configPath, modelPath);
 	if (net.empty()) {
