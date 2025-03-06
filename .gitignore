@@ -1,4 +1,5 @@
 .DS_store
+dnn_face_detect
 # Ignore build artifacts
 /build/
 /bin/
