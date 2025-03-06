@@ -16,7 +16,8 @@ int main() {
 		return -1;
 	}
 
-	cv::VideoCapture cap(0); // Opens webcam, where 0 is default camera device
+	// Opens webcam, where 0 is default camera device
+	cv::VideoCapture cap(0); 
 	if (!cap.isOpened()) {
 		std::cout << "Error opening video stream or file" << std::endl;
 		return -1;
